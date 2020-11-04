@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';">
+    <title>ElectronJS</title>
+</head>
+
+<body>
+    <h1>Estoy utilizando los siguientes paquetes</h1>
+    <ul>
+        <li>
+            Node:
+            <script>
+                document.write(process.versions.node)
+            </script>
+        </li>
+        <li>
+            Chrome:
+            <script>
+                document.write(process.versions.chrome)
+            </script>
+        </li>
+        <li>
+            Electron:
+            <script>
+                document.write(process.versions.electron)
+            </script>
+        </li>
+    </ul>
+
+    <button id="nueva-ventana">Crear Ventana</button>
+
+    <h2>Automata Finitos Deterministicos</h2>
+    <div>
+        <h2>Cadenas</h2>
+        <label for="">Ingrese la cadena para validar</label>
+        <input type="text" id="txtCadena">
+    </div>
+
+    <div>
+        <h2>Tabla de transiciones</h2>
+        <table>
+            <tr>
+                <th></th>
+                <th>0</th>
+                <th>1</th>
+            </tr>
+            <tr>
+                <th>S1</th>
+                <td>S2</td>
+                <td>error</td>
+            </tr>
+            <tr>
+                <th>S2</th>
+                <td>S2</td>
+                <td>S2</td>
+            </tr>
+        </table>
+    </div>
+
+    <button id="verificar">Verificar</button>
+    <script src="secondary.js"></script>
+</body>
+
+</html>
